@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HolyHats — a hole new way to wear your hair</title>
+<meta name="description" content="A bucket hat with a hole in the top so your bun goes through. Made from RTV nylon spun from recycled ocean fishing nets.">
+<link rel="icon" href="img/logo.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mielamayer.github.io/holyhats/">
+<meta property="og:title" content="HolyHats">
+<meta property="og:description" content="A hole new way to wear your hair.">
+<meta property="og:image" content="https://mielamayer.github.io/holyhats/img/patch.jpg">
+<meta property="og:image:width" content="1254">
+<meta property="og:image:height" content="1254">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HolyHats">
+<meta name="twitter:description" content="A hole new way to wear your hair.">
+<meta name="twitter:image" content="https://mielamayer.github.io/holyhats/img/patch.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F2EDE2; --ink:#15120B; --plum:#6E2A55; --olive:#5E6B34; --sky:#9ec6ec;
+  --line:rgba(21,18,11,.14);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:'Space Grotesk',sans-serif;font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.serif{font-family:'Fraunces',serif}
+.kick{font-size:13px;letter-spacing:.28em;text-transform:uppercase;font-weight:700}
+
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
+  padding:16px 28px;mix-blend-mode:normal;transition:background .3s,padding .3s,border-color .3s;border-bottom:1px solid transparent}
+nav.solid{background:rgba(242,237,226,.86);backdrop-filter:blur(10px);border-color:var(--line)}
+nav .brand{font-family:'Fraunces',serif;font-weight:900;font-size:24px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+nav .brand img{width:30px;height:30px;border-radius:50%;object-fit:cover}
+nav .brand b{color:var(--plum)}
+nav .links{display:flex;gap:30px;align-items:center}
+nav .links a{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;text-decoration:none;opacity:.8;transition:opacity .2s}
+nav .links a:hover{opacity:1}
+nav .cta{border:1.5px solid var(--ink);border-radius:40px;padding:9px 18px!important;opacity:1!important;font-weight:700}
+nav .cta:hover{background:var(--ink);color:var(--cream)}
+@media(max-width:820px){nav .links a:not(.cta){display:none}}
+
+/* hero */
+.hero{position:relative}
+.hero .herogrid{display:grid;grid-template-columns:1.02fr .98fr;gap:50px;align-items:center;min-height:100svh;padding:120px 0 74px}
+.hero .tag{font-size:15px;letter-spacing:.22em;text-transform:uppercase;color:var(--plum);font-weight:700;margin-bottom:18px}
+.hero h1{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(64px,11vw,160px);line-height:.8;letter-spacing:-.03em}
+.hero h1 em{color:var(--plum);font-style:italic;font-weight:500;display:block}
+.hero .sub{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(22px,2.8vw,36px);margin-top:24px;max-width:520px;color:#3a3327}
+.hero .badge{margin-top:22px;display:inline-block;background:rgba(94,107,52,.12);color:#3f4a1f;border:1px solid rgba(94,107,52,.32);border-radius:40px;padding:10px 18px;font-size:13.5px;font-weight:600;letter-spacing:.01em}
+.hero .badge b{color:var(--olive);font-weight:700}
+.hero .row{display:flex;gap:16px;margin-top:30px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;border-radius:40px;padding:15px 28px;font-weight:700;font-size:14px;letter-spacing:.06em;transition:transform .15s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-dark{background:var(--ink);color:var(--cream)}
+.btn-out{border:1.5px solid var(--ink)}
+.heroimg img{width:100%;border-radius:18px;box-shadow:0 30px 80px rgba(21,18,11,.28)}
+@media(max-width:900px){.hero .herogrid{grid-template-columns:1fr;gap:28px;min-height:auto;padding:118px 0 60px}.heroimg{margin-top:6px}}
+.scrollcue{position:absolute;bottom:26px;left:28px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
+
+/* sections */
+section{padding:96px 0;border-top:1px solid var(--line)}
+.lede{font-family:'Fraunces',serif;font-size:clamp(28px,4.6vw,52px);line-height:1.15;font-weight:400;letter-spacing:-.01em;max-width:1000px}
+.lede b{font-weight:600}
+.lede em{color:var(--plum)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+@media(max-width:860px){.two{grid-template-columns:1fr;gap:34px}}
+.p{font-size:19px;margin-top:22px;max-width:560px}
+.p strong{font-weight:700}
+.shead{font-family:'Fraunces',serif;font-size:clamp(34px,5.5vw,64px);font-weight:900;letter-spacing:-.02em;line-height:1}
+.shead em{color:var(--plum);font-weight:500;font-style:italic}
+.skick{color:var(--plum);margin-bottom:18px}
+figure img{border-radius:16px;box-shadow:0 18px 50px rgba(21,18,11,.2)}
+
+/* product line */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:46px}
+@media(max-width:780px){.cards{grid-template-columns:1fr}}
+.card{border:1px solid var(--line);border-radius:18px;padding:30px;background:rgba(255,255,255,.42);transition:transform .2s,box-shadow .2s,background .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(21,18,11,.12);background:#fff}
+.card .ed{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--olive);font-weight:700}
+.card h3{font-family:'Fraunces',serif;font-size:30px;font-weight:600;margin:8px 0 12px}
+.card.dream{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.card.dream .ed{color:#caa9bf}
+.card.cult{background:var(--plum);color:#fff;border-color:var(--plum)}
+.card.cult .ed{color:#f0cfe2}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:46px}
+@media(max-width:780px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat .n{font-family:'Fraunces',serif;font-size:clamp(34px,5vw,56px);font-weight:900;line-height:1;color:var(--olive)}
+.stat .l{font-size:13px;letter-spacing:.04em;margin-top:8px;opacity:.8}
+
+/* full-screen wide banner with floating text */
+.banner{position:relative;width:100vw;left:50%;margin-left:-50vw;min-height:100svh;
+  display:flex;align-items:center;justify-content:center;text-align:center;padding:0;border-top:none;
+  background-image:url('img/banner-wide.jpg');background-size:cover;background-position:center;background-attachment:fixed}
+.banner:before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(21,18,11,.32),rgba(21,18,11,.12) 40%,rgba(21,18,11,.42))}
+.banner .bannertext{position:relative;z-index:2;max-width:820px;padding:0 28px;color:#fff}
+.banner .bk{font-size:13px;letter-spacing:.28em;text-transform:uppercase;font-weight:700;color:#fff;opacity:.9}
+.banner h2{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(40px,7vw,96px);line-height:.95;letter-spacing:-.02em;margin:18px 0 0;text-shadow:0 2px 30px rgba(0,0,0,.45)}
+.banner h2 em{font-style:italic;font-weight:500;color:#f0cfe2}
+@media(max-width:820px){.banner{background-attachment:scroll;min-height:78svh}}
+
+/* gallery */
+.gal{columns:3;column-gap:16px;margin-top:42px}
+@media(max-width:860px){.gal{columns:2}}
+@media(max-width:520px){.gal{columns:1}}
+.gal figure{break-inside:avoid;margin:0 0 16px;position:relative}
+.gal img{width:100%;border-radius:14px}
+.gal figure.circle img{border-radius:50%;aspect-ratio:1;object-fit:cover}
+.gal figcaption{position:absolute;left:12px;bottom:12px;right:12px;color:#fff;font-size:13px;font-weight:500;text-shadow:0 1px 8px rgba(0,0,0,.7);letter-spacing:.02em}
+
+/* manifesto */
+.manifesto{background:var(--ink);color:var(--cream);text-align:center;border:none}
+.manifesto .m{font-family:'Fraunces',serif;font-size:clamp(26px,4.4vw,50px);line-height:1.2;font-weight:400;max-width:980px;margin:0 auto}
+.manifesto .m em{color:#e0b7d1;font-style:italic}
+.manifesto .final{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(22px,3vw,32px);margin-top:46px;color:#cbb8a0}
+.qrband{background:var(--ink);color:var(--cream);text-align:center;padding:84px 0 72px;border-top:1px solid rgba(255,255,255,.12)}
+.qrband .skick{color:#e0b7d1}
+.qrband h2{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(30px,4.4vw,52px);letter-spacing:-.02em}
+.qrband h2 em{color:#e0b7d1;font-style:italic;font-weight:500}
+.qrsub{margin-top:14px;font-size:15px;color:#cbb8a0}
+.qrsub b{color:#fff}
+.qrrow{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-top:40px}
+.qrcard{display:block;text-decoration:none;background:#fff;border-radius:20px;padding:20px 20px 24px;width:248px;transition:transform .18s,box-shadow .18s}
+.qrcard:hover{transform:translateY(-5px);box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.qrcard img{width:208px;height:208px;display:block;margin:0 auto;image-rendering:pixelated}
+.qrcard .ql{color:var(--ink);font-weight:700;font-size:17px;margin-top:14px;letter-spacing:.01em}
+.qrcard .qc{color:#7a7265;font-size:13px;margin-top:3px}
+footer{background:var(--ink);color:#a99e8b;text-align:center;padding:44px 0 60px;border-top:1px solid rgba(255,255,255,.12)}
+footer a{color:#e0b7d1;text-decoration:none}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="brand"><img src="img/logo.jpg" alt="HolyHats">Holy<b>Hats</b></div>
+  <div class="links">
+    <a href="#pitch">The Pitch</a>
+    <a href="#ocean">Ocean</a>
+    <a href="#line">The Line</a>
+    <a href="#wild">In the Wild</a>
+    <a class="cta" href="https://artizen.fund/index/p/holyhats-village-bucket-hats-made-from-ocean-fishnet" target="_blank" rel="noopener">Back it ↗</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap herogrid">
+    <div class="herotext">
+      <div class="tag">Edge Esmeralda · made from ocean nets</div>
+      <h1>Holy<em>Hats</em></h1>
+      <div class="sub">A hole new way to wear your hair.</div>
+      <div class="badge reveal">🌊 <b>100% recycled ocean fishnet</b> · infinitely recyclable · PFAS-free · −70% CO₂</div>
+      <div class="row">
+        <a class="btn btn-dark" href="#pitch">The pitch ↓</a>
+        <a class="btn btn-out" href="#wild">See them in the wild</a>
+      </div>
+    </div>
+    <div class="heroimg"><img src="img/top-square.jpg" alt="The HolyHats lineup floating in the clouds — Edge blueprint olive plus crochet colorways, buns poking through the crown"></div>
+  </div>
+  <div class="scrollcue">scroll · ocean net in · top-knot out</div>
+</header>
+
+<section id="pitch">
+  <div class="wrap">
+    <p class="lede reveal">Ever wanted to wear a <b>bun</b> <em>and</em> a <b>bucket hat</b>? For all of human history you had to pick one. <em>Now you don't.</em></p>
+    <div class="two" style="margin-top:60px">
+      <div>
+        <p class="p reveal">It's a bucket hat with <strong>a hole in the top.</strong> Your bun goes <em>through</em> the hole and out the crown — hair's up, face is shaded.</p>
+        <p class="p reveal">The hole is <strong>small on purpose:</strong> snug around your bun, <strong>your own hair holds the hat down.</strong> No chin strap. A gust hits and it <em>stays put</em> — anchored by the magnificent bun God gave you.</p>
+      </div>
+      <div>
+        <figure class="reveal"><img src="img/product-grid.jpg" alt="The HolyHat design — Edge blueprint grid on ocean-net nylon, bun through the crown"></figure>
+      </div>
+    </div>
+    <p class="p reveal" style="max-width:760px">"But what if I don't have a bun?" Glad you asked — that's <strong>expansion revenue.</strong> We'll also sell <strong>fake buns:</strong> clip-in structural buns so even the bun-less get full hat-retention. We don't just sell the hat — we sell <strong>the hair that holds it on.</strong></p>
+  </div>
+</section>
+
+<section id="ocean">
+  <div class="wrap two">
+    <div>
+      <div class="skick kick reveal">Made 100% sustainably</div>
+      <h2 class="shead reveal">You're pulling nets out of the sea &amp; <em>wearing them.</em></h2>
+      <p class="p reveal">Every HolyHat is made from <strong>Return to Vendor (RTV)</strong> nylon — spun from <strong>recycled ocean fishing nets</strong> (~46% of ocean plastic by weight). RTV's breakthrough chemistry rebuilds that nylon over and over with almost no yield lost: <strong>infinitely recyclable, PFAS-free, ~70% lower CO₂</strong>, at price parity with virgin. The world's first carbon-sequestering bucket hat.</p>
+    </div>
+    <figure class="reveal"><img src="img/product-black.jpg" alt="HolyHats in charcoal ocean-net nylon, top-knots out"></figure>
+  </div>
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat reveal"><div class="n">~46%</div><div class="l">of ocean plastic is fishing nets</div></div>
+      <div class="stat reveal"><div class="n">∞</div><div class="l">infinitely recyclable nylon</div></div>
+      <div class="stat reveal"><div class="n">0</div><div class="l">PFAS · zero deadstock</div></div>
+      <div class="stat reveal"><div class="n">−70%</div><div class="l">CO₂ vs virgin nylon</div></div>
+      <div class="stat reveal"><div class="n">1st</div><div class="l">carbon-sequestering bucket hat</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="line">
+  <div class="wrap">
+    <div class="skick kick reveal">The product line</div>
+    <h2 class="shead reveal">This is just the <em>MVP.</em></h2>
+    <div class="cards">
+      <div class="card reveal"><div class="ed">Edition One</div><h3>Edge Merch</h3><p>A HolyHat repping <strong>Edge City.</strong> So rad and so functional that strangers stop you to ask where you got it — your opening to talk about Edge and genuinely blow their mind. A hat that does your networking for you.</p></div>
+      <div class="card reveal"><div class="ed">Edition Two</div><h3>The Blank Slate</h3><p>Bring your own art, and we print it on an <strong>RTV HolyHat</strong> made just for you. Your design, our ocean-net nylon, zero waste.</p></div>
+      <div class="card dream reveal"><div class="ed">Edition Three · the dream</div><h3>The Space Bun Hat</h3><p><em>Two</em> holes. <em>Two</em> buns. Double the anchoring, double the glory. We're not there yet. But we're going.</p></div>
+      <div class="card cult reveal"><div class="ed">The cult favorite</div><h3>The Glory Hat</h3><p>The colloquial name for the hole-in-the-top situation. There's a hole. It's glorious. People named it themselves. We simply allowed it.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="banner" aria-label="The HolyHats lineup in the clouds">
+  <div class="bannertext reveal">
+    <div class="bk">Olive blueprint · crochet colorways</div>
+    <h2>A hole new way to <em>wear your hair.</em></h2>
+  </div>
+</section>
+
+<section id="wild">
+  <div class="wrap">
+    <div class="skick kick reveal">Field-tested</div>
+    <h2 class="shead reveal">HolyHats <em>in the wild.</em></h2>
+    <div class="gal">
+      <figure><img src="img/wild-archery.jpg" alt="Drawing a bow, top-knot out"><figcaption>Load-bearing bun, hands free</figcaption></figure>
+      <figure><img src="img/wild-1.jpg" alt="The Edge crew in hats"><figcaption>The Edge crew — top-knots out</figcaption></figure>
+      <figure><img src="img/wild-2.jpg" alt="Handmade HolyHat prototype"><figcaption>The handmade prototype that started it</figcaption></figure>
+      <figure><img src="img/hero.jpg" alt="HolyHats in the clouds, buns through the crown"><figcaption>Made-to-order, RTV ocean-net nylon</figcaption></figure>
+      <figure class="circle"><img src="img/patch.jpg" alt="HolyHats embroidered patch"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="manifesto">
+  <div class="wrap">
+    <p class="m reveal">A bucket hat for people who want to wear buns. We envision a world where <em>every head is cool, breezy, shaded, and quietly cleaning the ocean</em> — where "there's a hole in your hat" becomes the highest compliment one human can pay another.</p>
+    <p class="final reveal">HolyHats — every head deserves a little <em>divine airflow.</em></p>
+    <div class="row" style="justify-content:center;margin-top:40px">
+      <a class="btn btn-dark" style="background:var(--plum)" href="https://artizen.fund/index/p/holyhats-village-bucket-hats-made-from-ocean-fishnet" target="_blank" rel="noopener">Back HolyHats on Artizen ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="qrband">
+  <div class="wrap">
+    <div class="skick kick reveal">Scan in</div>
+    <h2 class="reveal">Take a HolyHat <em>home.</em></h2>
+    <p class="qrsub reveal">Donate <b>and</b> hit <b>Boost</b> — both move us up, and the donation unlocks match funding.</p>
+    <div class="qrrow">
+      <a class="qrcard reveal" href="https://artizen.fund/index/p/holyhats-village-bucket-hats-made-from-ocean-fishnet" target="_blank" rel="noopener">
+        <img src="img/qr-artizen.png" alt="QR: back HolyHats on Artizen">
+        <div class="ql">Back us on Artizen</div>
+        <div class="qc">donate &amp; boost → unlock match funding</div>
+      </a>
+      <a class="qrcard reveal" href="https://www.simocracy.org/communities/edge-esmeralda" target="_blank" rel="noopener">
+        <img src="img/qr-simocracy.png" alt="QR: HolyHats on Simocracy">
+        <div class="ql">Our Simocracy proposal</div>
+        <div class="qc">in the Edge Esmeralda S-Process</div>
+      </a>
+      <a class="qrcard reveal" href="https://thirdsphere.substack.com/p/why-we-invested-in-return-to-vendor" target="_blank" rel="noopener">
+        <img src="img/qr-rtv.png" alt="QR: why we invested in RTV">
+        <div class="ql">The RTV story</div>
+        <div class="qc">why we back Return to Vendor</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="serif" style="font-size:26px;color:#e0b7d1;font-weight:900">HolyHats</div>
+    <p style="margin-top:10px;font-size:14px">Built at Edge Esmeralda · made from RTV recycled ocean-net nylon.<br>
+    <a href="https://artizen.fund/index/p/holyhats-village-bucket-hats-made-from-ocean-fishnet" target="_blank" rel="noopener">Artizen</a> · <a href="https://thirdsphere.substack.com/p/why-we-invested-in-return-to-vendor" target="_blank" rel="noopener">Why we invested in RTV</a></p>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>{nav.classList.toggle('solid',scrollY>40)});
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
